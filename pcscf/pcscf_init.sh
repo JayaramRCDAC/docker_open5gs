@@ -74,6 +74,14 @@ then
 fi
 
 sed -i 's|PCSCF_IP|'$PCSCF_IP'|g' /etc/kamailio_pcscf/pcscf.cfg
+
+sed -i 's|SDCORE_NRF_IP|'$SDCORE_NRF_IP'|g' /etc/kamailio_pcscf/pcscf.cfg
+sed -i 's|SDCORE_NRF_PORT|'$SDCORE_NRF_PORT'|g' /etc/kamailio_pcscf/pcscf.cfg
+sed -i 's|SDCORE_PCF_IP|'$SDCORE_PCF_IP'|g' /etc/kamailio_pcscf/pcscf.cfg
+sed -i 's|SDCORE_PCF_PORT|'$SDCORE_PCF_PORT'|g' /etc/kamailio_pcscf/pcscf.cfg
+sed -i 's|SDCORE_PCF_IP|'$SDCORE_PCF_IP'|g' /etc/kamailio_pcscf/route/mo.cfg
+sed -i 's|SDCORE_PCF_PORT|'$SDCORE_PCF_PORT'|g' /etc/kamailio_pcscf/route/mo.cfg
+
 sed -i 's|SCP_IP|'$SCP_IP'|g' /etc/kamailio_pcscf/pcscf.cfg
 sed -i 's|PCSCF_PUB_IP|'$PCSCF_PUB_IP'|g' /etc/kamailio_pcscf/pcscf.cfg
 sed -i 's|IMS_DOMAIN|'$IMS_DOMAIN'|g' /etc/kamailio_pcscf/pcscf.cfg
